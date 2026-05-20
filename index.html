@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cap Rate Explained USA 2026 — Formula, NOI, Benchmarks by Market</title>
+<meta name="description" content="Cap rate explained — how to calculate capitalization rate, what NOI means, good vs bad cap rates by US market, and how cap rate relates to risk and return. Updated 2026.">
+<link rel="canonical" href="https://mmandai.github.io/us-cap-rate-explained/">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-53M2RMSY9Q"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-53M2RMSY9Q');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Cap Rate Explained USA 2026 — Formula, NOI and Benchmarks","url":"https://mmandai.github.io/us-cap-rate-explained/","inLanguage":"en-US","publisher":{"@type":"Organization","name":"MMDAI","url":"https://mmandai.github.io"},"dateModified":"2026-05-18"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"MMDAI","item":"https://mmandai.github.io"},{"@type":"ListItem","position":2,"name":"Cap Rate Explained","item":"https://mmandai.github.io/us-cap-rate-explained/"}]}]}</script>
+<style>*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;}
+body{background:#f8fafc;color:#0f1117;font-family:'Manrope',sans-serif;font-size:15px;line-height:1.6;overflow-x:hidden;}
+:root{
+  --blue:#2563eb;--blue2:#1d4ed8;
+  --ink:#0f1117;--ink2:#3a3f4d;--ink3:#7a8099;--ink4:#b0b6c8;
+  --paper:#f8fafc;--paper2:#e8edf5;--white:#fff;--rule:#dde3ed;
+  --navy:#0a1628;--green:#16a34a;--red:#dc2626;--amber:#d97706;
+  --sans:'Manrope',sans-serif;
+  --mono:'DM Mono',monospace;
+  --r:8px;--r2:14px;
+}
+/* HEADER */
+.site-header{background:#0a1628;border-bottom:1px solid rgba(255,255,255,.08);padding:14px 0;position:sticky;top:0;z-index:200;}
+.hd-inner{max-width:1100px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;}
+.logo{font-family:'Manrope',sans-serif;font-size:18px;font-weight:800;color:#fff;text-decoration:none;}
+.logo em{color:#2563eb;font-style:normal;}
+.hd-nav a{font-size:13px;font-weight:500;color:rgba(255,255,255,.5);text-decoration:none;}
+.hd-nav a:hover{color:#fff;}
+/* COOKIE */
+.cookie-banner{position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#0a1628;padding:16px 24px;display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;font-size:13px;}
+.cookie-banner p{max-width:560px;text-align:center;color:rgba(255,255,255,.7);}
+.cookie-banner a{color:#fff;text-decoration:underline;}
+.cookie-btn{padding:8px 20px;border-radius:40px;font-size:13px;font-weight:700;cursor:pointer;border:none;}
+.cookie-accept{background:#2563eb;color:#fff;}
+.cookie-reject{background:transparent;color:rgba(255,255,255,.7);border:1px solid rgba(255,255,255,.3)!important;}
+.cookie-buttons{display:flex;gap:8px;}
+@media(max-width:600px){.cookie-banner{flex-direction:column;text-align:center;}}
+/* HERO */
+.hero{padding:64px 24px 52px;border-bottom:1px solid rgba(255,255,255,.08);text-align:center;background:#0a1628;}
+.hero-kicker{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#2563eb;margin-bottom:16px;display:flex;align-items:center;justify-content:center;gap:8px;}
+.hero-kicker::before,.hero-kicker::after{content:'';display:inline-block;width:24px;height:1px;background:#2563eb;}
+.hero h1{font-family:'Manrope',sans-serif;font-size:clamp(30px,4vw,56px);font-weight:800;line-height:1.08;letter-spacing:-.02em;color:#fff;margin-bottom:20px;}
+.hero h1 em{font-style:italic;color:#2563eb;}
+.hero-lead{font-size:17px;color:rgba(255,255,255,.7);line-height:1.7;max-width:600px;margin:0 auto 28px;}
+.hero-pills{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;}
+.pill{font-size:12px;font-weight:600;color:rgba(255,255,255,.65);background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:5px 12px;}
+/* LAYOUT */
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px;}
+.page-layout{display:grid;grid-template-columns:1fr 300px;gap:40px;padding:52px 0 80px;align-items:start;}
+@media(max-width:900px){
+  .page-layout{display:block;padding:32px 0 40px;}
+  .page-layout > .article{display:block;margin-bottom:32px;}
+  .page-layout > .sidebar{display:block;clear:both;}
+}
+@media(max-width:560px){.wrap{padding:0 16px;}}
+/* ARTICLE */
+.article h2{font-family:'Manrope',sans-serif;font-size:26px;font-weight:800;color:#0f1117;margin:40px 0 14px;letter-spacing:-.02em;text-align:center;}
+.article h3{text-align:center;}
+.article{max-width:100%;text-align:center;}.article h2:first-child{margin-top:0;}
+.article h3{font-size:16px;font-weight:700;color:#0f1117;margin:28px 0 10px;}
+.article p{font-size:15px;color:#3a3f4d;line-height:1.8;margin-bottom:14px;}
+.article p a{color:#1d4ed8;text-decoration:underline;text-underline-offset:3px;}
+.article strong{color:#0f1117;font-weight:700;}
+/* EXAMPLE BOX */
+.example-box{background:#fff;border:1px solid #dde3ed;border-left:3px solid #2563eb;border-radius:0 14px 14px 0;padding:20px 24px;margin:20px 0;}
+.ex-label{font-family:'DM Mono',monospace;font-size:10px;color:#1d4ed8;letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px;text-align:center;}
+.ex-row{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid #dde3ed;font-size:14px;color:#3a3f4d;}
+.ex-row:last-child{border-bottom:none;font-weight:700;color:#0f1117;}
+.ex-row span:last-child{font-family:'DM Mono',monospace;font-size:13px;white-space:nowrap;}
+.ex-neg{color:#dc2626;}
+.ex-pos{color:#16a34a;}
+/* TABLES */
+.table-wrap{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;margin:20px 0;}
+.data-table{width:100%;min-width:320px;border-collapse:collapse;font-size:14px;}
+.data-table th{background:#e8edf5;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#7a8099;padding:10px 14px;text-align:center;border-bottom:2px solid #dde3ed;white-space:nowrap;}
+.data-table td{padding:11px 14px;border-bottom:1px solid #dde3ed;color:#3a3f4d;vertical-align:top;text-align:center;word-break:break-word;}
+.data-table tr:last-child td{border-bottom:none;}
+.data-table td:first-child{text-align:center;}
+@media(max-width:600px){
+  .data-table{table-layout:fixed;font-size:12px;}
+  .data-table th,.data-table td{padding:8px 8px;white-space:normal;word-break:break-word;}
+}
+.data-table .good{color:#16a34a;font-weight:700;}
+.data-table .bad{color:#dc2626;font-weight:700;}
+.data-table .mid{color:#d97706;font-weight:700;}
+.data-table .hl{background:rgba(37,99,235,.07);font-weight:700;}
+/* TWO-COL CARDS */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0;}
+@media(max-width:600px){.two-col{grid-template-columns:1fr;}}
+.col-card{background:#fff;border:1px solid #dde3ed;border-radius:14px;padding:20px;text-align:center;}
+.col-card h3{font-family:'Manrope',sans-serif;font-size:17px;font-weight:800;margin-bottom:12px;color:#0f1117;}
+.col-card ul{display:block;text-align:center;margin:0 auto;padding:0;list-style:none;}
+.col-card ul li{font-size:13px;color:#3a3f4d;line-height:1.8;padding-left:0;}
+.col-card ul li::before{content:none;}
+/* VERDICT */
+.verdict{background:rgba(37,99,235,.06);border:1px solid rgba(37,99,235,.18);border-radius:14px;padding:20px 24px;margin:28px 0;}
+.verdict-label{font-family:'DM Mono',monospace;font-size:10px;color:#1d4ed8;letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px;text-align:center;}
+.verdict p{font-size:15px;color:#3a3f4d;line-height:1.7;margin:0;}
+/* FAQ */
+.faq-section{margin-top:40px;}
+.faq-section h2{text-align:center;}
+.faq-item{border-bottom:1px solid #dde3ed;}
+.faq-item summary{font-size:15px;font-weight:600;color:#0f1117;padding:16px 0;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.faq-item summary::after{content:'+';font-size:20px;color:#2563eb;flex-shrink:0;transition:transform .2s;}
+.faq-item[open] summary::after{transform:rotate(45deg);}
+.faq-body{font-size:14px;color:#3a3f4d;line-height:1.8;padding:0 0 16px;text-align:left;}
+.faq-body a{color:#1d4ed8;text-decoration:underline;text-underline-offset:3px;}
+/* SIDEBAR */
+.sidebar{display:flex;flex-direction:column;gap:16px;text-align:center;}
+@media(min-width:901px){.sidebar{position:sticky;top:90px;align-self:start;}}
+@media(max-width:900px){.sidebar{position:static !important;top:auto !important;}.side-card h3,.side-card p,.side-links,.side-btn{text-align:center;}}
+.side-card{background:#fff;border:1px solid #dde3ed;border-radius:14px;padding:20px;box-shadow:0 1px 3px rgba(0,0,0,.07);}
+.side-card h3{font-family:'Manrope',sans-serif;font-size:17px;font-weight:800;color:#2563eb;margin-bottom:8px;}
+.side-card p{font-size:13px;color:#7a8099;line-height:1.6;margin-bottom:14px;}
+.side-btn{display:block;text-align:center;background:#2563eb;color:#fff;font-weight:700;font-size:13px;padding:10px 16px;border-radius:8px;text-decoration:none;margin-bottom:6px;}
+.side-btn.outline{background:transparent;border:1px solid #dde3ed;color:#3a3f4d;}
+.side-links{display:flex;flex-direction:column;gap:6px;margin-top:4px;text-align:center;}
+.side-links a{font-size:13px;color:#3a3f4d;text-decoration:none;padding:7px 10px;border-radius:8px;background:#e8edf5;display:flex;justify-content:center;align-items:center;text-align:center;}
+.side-links a:hover{background:#dde3ed;}
+/* FOOTER */
+footer{background:#0a1628;color:rgba(255,255,255,.5);padding:40px 0;text-align:center;}
+.footer-inner{max-width:1100px;margin:0 auto;padding:0 24px;display:flex;flex-direction:column;align-items:center;gap:16px;}
+.footer-logo{font-weight:800;font-size:18px;color:#fff;}
+.footer-logo em{color:#2563eb;font-style:normal;}
+.footer-links{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;}
+.footer-links a{font-size:12px;color:rgba(255,255,255,.5);text-decoration:none;font-weight:500;}
+.footer-links a:hover{color:#fff;}
+.footer-disc{font-size:11px;color:rgba(255,255,255,.25);max-width:700px;line-height:1.7;border-top:1px solid rgba(255,255,255,.08);padding-top:16px;}
+@media(max-width:900px){
+  .article h2,.article h3,.article p,.verdict p,.faq-section h2{text-align:center;}
+  .side-card{text-align:center;}
+  .side-links a{justify-content:center;}
+  .faq-item summary{text-align:left;}
+  .faq-body{text-align:left;}
+  .ex-row{text-align:left;}
+}
+</style>
+</head>
+<body>
+<div class="cookie-banner" id="cookieBanner" style="display:none;">
+  <p>We use cookies from Google Analytics and Google AdSense. See our <a href="https://mmandai.github.io/privacy/">Privacy Policy</a>.</p>
+  <div class="cookie-buttons">
+    <button class="cookie-btn cookie-accept" onclick="setCookieConsent('accepted')">Accept</button>
+    <button class="cookie-btn cookie-reject" onclick="setCookieConsent('rejected')">Reject</button>
+  </div>
+</div>
+<header class="site-header">
+  <div class="hd-inner">
+    <a href="https://mmandai.github.io" class="logo">MM<em>DAI</em></a>
+    <nav class="hd-nav"><a href="https://mmandai.github.io/about/">About</a></nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-kicker">US Real Estate · 2026</div>
+  <h1>Cap Rate <em>Explained</em></h1>
+  <p class="hero-lead">The capitalization rate formula, how to calculate NOI correctly, what a good cap rate looks like by market — and where investors get it wrong.</p>
+  <div class="hero-pills"><span class="pill">Cap rate formula</span><span class="pill">NOI explained</span><span class="pill">Benchmarks by city</span><span class="pill">Cap rate vs ROI</span></div>
+</section>
+
+<div class="wrap">
+<div class="page-layout">
+<article class="article">
+
+<h2>What is cap rate?</h2>
+<p>The capitalization rate — cap rate — is the most widely used metric for evaluating income-producing real estate. It measures the annual return a property generates relative to its value, assuming an all-cash purchase. Cap rate strips out financing so you can compare properties on the same footing regardless of how they're funded.</p>
+<p>The formula is straightforward: <strong>Cap Rate = Net Operating Income ÷ Property Value</strong>. A property generating $24,000 of NOI purchased for $400,000 has a 6% cap rate. The inverse is also true — if you know a market trades at 6% cap rates, a property with $24,000 NOI should be worth roughly $400,000.</p>
+
+<h2>The cap rate formula</h2>
+<div class="example-box">
+<div class="ex-label">Cap rate — step by step</div>
+<div class="ex-row"><span>Gross rental income (annual)</span><span>$36,000</span></div>
+<div class="ex-row"><span>Vacancy allowance (5%)</span><span class="ex-neg">−$1,800</span></div>
+<div class="ex-row"><span>Effective gross income</span><span>$34,200</span></div>
+<div class="ex-row"><span>Operating expenses (taxes, insurance, mgmt, repairs)</span><span class="ex-neg">−$10,200</span></div>
+<div class="ex-row"><span>Net Operating Income (NOI)</span><span>$24,000</span></div>
+<div class="ex-row"><span>Purchase price</span><span>$400,000</span></div>
+<div class="ex-row"><span>Cap rate (NOI ÷ price)</span><span class="ex-pos">6.0%</span></div>
+</div>
+
+<h2>What goes into NOI — and what doesn't</h2>
+<p>Getting NOI right is where most beginner investors make mistakes. NOI is income after operating expenses but <strong>before</strong> mortgage payments, depreciation and income taxes. It is a property-level metric, not an investor-level metric.</p>
+
+<div class="two-col">
+  <div class="col-card">
+    <h3>Included in NOI</h3>
+    <ul>
+      <li>Gross rent (all units)</li>
+      <li>Less: vacancy & credit loss</li>
+      <li>Less: property taxes</li>
+      <li>Less: insurance</li>
+      <li>Less: property management fees</li>
+      <li>Less: maintenance & repairs</li>
+      <li>Less: utilities (landlord-paid)</li>
+      <li>Less: HOA / common area costs</li>
+    </ul>
+  </div>
+  <div class="col-card">
+    <h3>Not included in NOI</h3>
+    <ul>
+      <li>Mortgage principal & interest</li>
+      <li>Depreciation</li>
+      <li>Income tax</li>
+      <li>Capital expenditures (roof, HVAC)</li>
+      <li>Loan origination fees</li>
+      <li>Personal expenses</li>
+      <li>Closing costs at purchase</li>
+      <li>Investor's own management time</li>
+    </ul>
+  </div>
+</div>
+
+<p>Capital expenditures (CapEx) are the most commonly omitted item. A roof replacement or HVAC system is not an operating expense — it's a capital cost. But failing to reserve for it means your NOI is overstated and your actual return lower than the cap rate implies. A CapEx reserve of 5–10% of gross rents is standard practice for older properties.</p>
+
+<h2>Cap rate benchmarks by US market</h2>
+<p>Cap rates vary significantly by market, property type and asset class. Higher cap rates signal higher perceived risk or lower demand — not necessarily better investments. Lower cap rates in gateway cities reflect rent growth expectations and liquidity premium.</p>
+
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>Market</th><th>Residential cap rate</th><th>Signal</th></tr></thead>
+<tbody>
+<tr><td>San Francisco / NYC</td><td class="bad">3.5–4.5%</td><td>Low yield, high appreciation bet</td></tr>
+<tr><td>Los Angeles / Seattle</td><td class="bad">4.0–5.0%</td><td>Competitive, supply-constrained</td></tr>
+<tr><td>Austin / Denver / Nashville</td><td class="mid">5.0–6.5%</td><td>Growth markets, balanced risk</td></tr>
+<tr><td>Phoenix / Atlanta / Dallas</td><td class="mid">5.5–7.0%</td><td>Strong cash flow + appreciation</td></tr>
+<tr><td>Midwest: Columbus, Indianapolis</td><td class="good">7.0–9.0%</td><td>High cash flow, lower appreciation</td></tr>
+<tr><td>Secondary / rural markets</td><td class="good">8.0–11%+</td><td>Illiquidity premium, higher risk</td></tr>
+</tbody>
+</table></div>
+<p>These are approximate 2026 ranges for stabilized residential rentals. Commercial, multifamily and short-term rental assets trade at different cap rates. Always verify current comps with a local broker — cap rates can shift 100–150bps within 12 months in fast-moving markets.</p>
+
+<h2>Cap rate vs cash-on-cash return</h2>
+<p>Cap rate and cash-on-cash (CoC) return are related but measure different things. Cap rate is financing-agnostic — it tells you about the property. Cash-on-cash measures your actual cash return on the equity you deployed, including the effect of leverage.</p>
+
+<div class="example-box">
+<div class="ex-label">Same property — cap rate vs cash-on-cash with leverage</div>
+<div class="ex-row"><span>Purchase price</span><span>$400,000</span></div>
+<div class="ex-row"><span>NOI</span><span>$24,000</span></div>
+<div class="ex-row"><span>Cap rate (NOI ÷ price)</span><span>6.0%</span></div>
+<div class="ex-row"><span>Down payment (25%)</span><span>$100,000</span></div>
+<div class="ex-row"><span>Annual mortgage payments</span><span class="ex-neg">−$17,100</span></div>
+<div class="ex-row"><span>Annual cash flow after debt service</span><span class="ex-pos">$6,900</span></div>
+<div class="ex-row"><span>Cash-on-cash return ($6,900 ÷ $100,000)</span><span class="ex-pos">6.9%</span></div>
+</div>
+
+<p>In this example, leverage improved the cash-on-cash return above the cap rate. But leverage works both ways — if NOI falls (vacancy spike, rent drop), the cash flow shrinks while the mortgage payment stays fixed. At higher interest rates, debt service can consume most or all of the NOI, turning a 6% cap rate property into near-zero cash flow.</p>
+
+<h2>The cap rate and interest rate relationship</h2>
+<p>Cap rates and interest rates are closely linked. When the risk-free rate (US Treasuries) rises, investors demand higher cap rates to compensate — otherwise a bond yields more than a property for less risk. The spread between cap rates and the 10-year Treasury typically runs 150–250 basis points. When that spread compresses below 100bps, property is arguably overpriced relative to bonds.</p>
+
+<div class="table-wrap"><table class="data-table">
+<thead><tr><th>10-yr Treasury</th><th>Typical cap rate floor</th><th>Spread</th><th>Market signal</th></tr></thead>
+<tbody>
+<tr><td>1.5% (2021)</td><td class="good">4.0–5.0%</td><td class="good">250–350bps</td><td>Property attractive vs bonds</td></tr>
+<tr><td>3.5% (2022)</td><td class="mid">5.0–6.0%</td><td class="mid">150–250bps</td><td>Neutral — repricing underway</td></tr>
+<tr><td>4.5% (2024–26)</td><td class="bad">5.5–7.0%</td><td class="bad">100–250bps</td><td>Selective — market-dependent</td></tr>
+</tbody>
+</table></div>
+
+<div class="verdict">
+<div class="verdict-label">Key point</div>
+<p>Cap rate is a valuation and comparison tool — not a measure of your actual return. A 7% cap rate in Indianapolis is not the same investment as a 4% cap rate in San Francisco: risk profile, liquidity, appreciation potential and tenant quality differ significantly. Use cap rate to screen and compare deals, then model the full return including leverage, CapEx reserves, tax benefits and exit assumptions before committing capital.</p>
+</div>
+
+<div class="faq-section"><h2>Frequently asked questions</h2>
+<details class="faq-item"><summary>Is a higher cap rate always better?</summary>
+<div class="faq-body">Not necessarily. A higher cap rate often reflects higher risk — weaker tenant demand, higher vacancy rates, lower-quality locations or aging assets requiring significant capital. A 9% cap rate in a declining secondary market may deliver worse actual returns than a 5% cap rate in a supply-constrained growth city. Context — market fundamentals, asset quality, rent trajectory — matters as much as the number itself.</div></details>
+<details class="faq-item"><summary>Does cap rate include mortgage payments?</summary>
+<div class="faq-body">No. Cap rate is calculated from Net Operating Income before debt service. It deliberately excludes financing so you can compare properties on an unlevered basis. Your actual cash return after mortgage payments is measured by cash-on-cash return, which will be higher or lower than the cap rate depending on your leverage and interest rate.</div></details>
+<details class="faq-item"><summary>What is a good cap rate for a rental property in 2026?</summary>
+<div class="faq-body">With the 10-year Treasury around 4.3–4.5% in 2026, most investors require a cap rate of at least 5.5–6% to justify the illiquidity and management premium of direct real estate over bonds. In affordable Midwest and Sun Belt markets, 7–9% is achievable. In coastal gateway cities, 4–5% is typical — investors there are underwriting appreciation rather than current yield.</div></details>
+<details class="faq-item"><summary>How do I calculate cap rate on a property I already own?</summary>
+<div class="faq-body">Use current market value (not your purchase price) as the denominator. Your cap rate changes as the property appreciates even if NOI stays flat — this is how a property bought at a 7% cap can trade at 5% a few years later. Using purchase price gives you your original going-in cap rate; using current value gives you the current cap rate, which is what a buyer would pay today.</div></details>
+<details class="faq-item"><summary>What's the difference between cap rate and gross yield?</summary>
+<div class="faq-body">Gross yield divides annual gross rent by purchase price — it ignores all expenses. Cap rate uses NOI after expenses, making it a far more useful comparison metric. A property with 10% gross yield and 50% expense ratio has a 5% cap rate. Gross yield is easy to calculate but can be misleading; cap rate is the standard professional metric for a reason.</div></details>
+</div>
+</article>
+
+<aside class="sidebar">
+<div class="side-card">
+<h3>Related reading</h3>
+<div class="side-links">
+<a href="https://mmandai.github.io/us-fha-vs-conventional/">FHA vs Conventional</a>
+<a href="https://mmandai.github.io/us-macrs-depreciation-explained/">MACRS Depreciation</a>
+<a href="https://mmandai.github.io/us-mortgage-vs-buy/">Mortgage vs Rent</a>
+</div></div>
+<div class="side-card">
+<h3>Rental ROI Calculator</h3>
+<p>Calculate NOI, cap rate, cash-on-cash return and full rental ROI for any US property.</p>
+<a href="https://mmandai.github.io/us-rental-roi/" class="side-btn">Open Calculator</a>
+<a href="https://imemyselfai.gumroad.com/l/rentalroicalc" class="side-btn outline">Download Excel</a>
+</div>
+<div class="side-card">
+<h3>US Calculators</h3>
+<div class="side-links">
+<a href="https://mmandai.github.io/us-roi-alquiler/">ROI de Alquiler</a>
+<a href="https://mmandai.github.io/us-closing-cost-estimator/">Closing Cost Estimator</a>
+<a href="https://mmandai.github.io/us-mortgage-affordability/">Mortgage Affordability</a>
+</div></div>
+</aside>
+</div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">MM<em>DAI</em></div>
+    <div class="footer-links">
+      <a href="https://mmandai.github.io/#us">US Calculators</a>
+      <a href="https://mmandai.github.io/us-glossary/">US Glossary</a>
+      <a href="https://mmandai.github.io/methodology/">How It Works</a>
+      <a href="https://mmandai.github.io/about/">About</a>
+      <a href="https://mmandai.github.io/privacy/">Privacy Policy</a>
+    </div>
+    <p class="footer-disc">For informational purposes only. Not financial or tax advice. MMDAI — last reviewed May 2026.</p>
+  </div>
+</footer>
+<script>
+function setCookieConsent(c){localStorage.setItem('cookieConsent',c);document.getElementById('cookieBanner').style.display='none';}
+if(!localStorage.getItem('cookieConsent')){document.getElementById('cookieBanner').style.display='flex';}
+document.querySelectorAll('.faq-item').forEach(i=>{i.addEventListener('toggle',()=>{if(i.open)document.querySelectorAll('.faq-item').forEach(o=>{if(o!==i&&o.open)o.removeAttribute('open');});});});
+</script>
+</body>
+</html>
